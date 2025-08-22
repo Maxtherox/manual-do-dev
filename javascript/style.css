@@ -1,0 +1,157 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* 🌙 Tema Escuro */
+body.dark {
+  background: linear-gradient(135deg, #0F1115, #1a1d22);
+  color: #fff;
+}
+
+/* ☀️ Tema Claro */
+body.light {
+  background: linear-gradient(135deg, #ffffff, #e8f6ff);
+  color: #0F1115;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00FFCC, #0099FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin-top: 0.5rem;
+}
+
+/* Toggle */
+#toggleMode {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid #00FFCC;
+  background: transparent;
+  color: #00FFCC;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#toggleMode:hover {
+  background: linear-gradient(90deg, #00FFCC, #0099FF);
+  color: #0F1115;
+  box-shadow: 0 0 12px #00FFCC;
+}
+
+/* Busca */
+.search-box {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+}
+.search-box input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  color: inherit;
+}
+.search-box input::placeholder {
+  color: #aaa;
+}
+
+/* Grid */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card estilo Glassmorphism */
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #00FFCC;
+}
+
+/* Níveis */
+.level {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #00FFCC, #0099FF);
+  color: #0F1115;
+}
+
+/* Termo */
+.card dt {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #00FFCC, #0099FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card dd {
+  margin: 0;
+  font-size: 0.95rem;
+  color: inherit;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
+  font-size: 0.9rem;
+  margin-top: auto;
+  color: #aaa;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}

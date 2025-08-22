@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual do Dev – Terminologia JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <header>
+    <h1>Terminologia JavaScript</h1>
+    <p>Conceitos essenciais para dominar a linguagem</p>
+    <button id="toggleMode">🌙 Alternar Tema</button>
+  </header>
+
+  <div class="search-box">
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="🔍 Buscar termos de JavaScript..." 
+    />
+  </div>
+
+  <main>
+    <div class="card">
+      <span class="level basico">Básico</span>
+      <dt>Variable Declaration (var, let, const)</dt>
+      <dd><b>var</b>: escopo de função, sofre hoisting e pode ser redeclarada. <b>let</b>: escopo de bloco, não pode ser redeclarada no mesmo escopo. <b>const</b>: escopo de bloco, cria constantes cujo valor não pode ser reatribuído.</dd>
+    </div>
+    <div class="card">
+        <span class="level basico">Básico</span>
+        <dt>Scope (Escopo)</dt>
+        <dd>O contexto no qual variáveis e funções são acessíveis. Pode ser global, de função ou de bloco.</dd>
+    </div>
+    <div class="card">
+        <span class="level basico">Básico</span>
+        <dt>Hoisting</dt>
+        <dd>Comportamento do JavaScript de mover declarações de variáveis e funções para o topo de seu escopo antes da execução.</dd>
+    </div>
+    <div class="card">
+      <span class="level basico">Básico</span>
+      <dt>Template Literals</dt>
+      <dd>Strings delimitadas por crases (` `), permitem interpolação com <code>${variavel}</code> e escrita em múltiplas linhas de forma simples.</dd>
+    </div>
+    <div class="card">
+      <span class="level basico">Básico</span>
+      <dt>Arrow Functions (()=>{})</dt>
+      <dd>Funções mais curtas, não vinculam seu próprio <code>this</code>, herdando o escopo externo. Muito usadas em callbacks.</dd>
+    </div>
+    <div class="card">
+        <span class="level basico">Básico</span>
+        <dt>Callback</dt>
+        <dd>Função passada como argumento para outra função, para ser executada posteriormente.</dd>
+    </div>
+     <div class="card">
+        <span class="level basico">Básico</span>
+        <dt>JSON</dt>
+        <dd>Formato de dados leve e legível, usado para troca de informações entre sistemas.</dd>
+    </div>
+    <div class="card">
+        <span class="level basico">Básico</span>
+        <dt>API</dt>
+        <dd>Conjunto de regras que permite que softwares se comuniquem entre si.</dd>
+    </div>
+    <div class="card">
+        <span class="level basico">Básico</span>
+        <dt>CRUD</dt>
+        <dd>As quatro operações básicas de persistência: Create, Read, Update e Delete.</dd>
+    </div>
+
+    <div class="card">
+        <span class="level intermediario">Intermediário</span>
+        <dt>this</dt>
+        <dd>Palavra-chave que se refere ao objeto que está executando a função atual.</dd>
+    </div>
+    <div class="card">
+      <span class="level intermediario">Intermediário</span>
+      <dt>Strict Mode ("use strict")</dt>
+      <dd>Modo que impõe regras mais rígidas, ajudando a evitar erros comuns. Exemplo: impede uso de variáveis não declaradas.</dd>
+    </div>
+    <div class="card">
+        <span class="level intermediario">Intermediário</span>
+        <dt>Closure</dt>
+        <dd>Função que se lembra do escopo onde foi criada, mesmo que seja executada fora dele.</dd>
+    </div>
+    <div class="card">
+        <span class="level intermediario">Intermediário</span>
+        <dt>Prototype</dt>
+        <dd>Modelo de herança usado pelo JavaScript, no qual objetos podem herdar propriedades e métodos de outros.</dd>
+    </div>
+     <div class="card">
+      <span class="level intermediario">Intermediário</span>
+      <dt>Class</dt>
+      <dd>Sintaxe moderna para definir objetos e herança em JavaScript. Açúcar sintático sobre protótipos.</dd>
+    </div>
+    <div class="card">
+      <span class="level intermediario">Intermediário</span>
+      <dt>Destructuring</dt>
+      <dd>Permite extrair valores de arrays e objetos em variáveis. Exemplo: <code>const {nome, idade} = pessoa;</code>.</dd>
+    </div>
+     <div class="card">
+      <span class="level intermediario">Intermediário</span>
+      <dt>Spread Operator (...)</dt>
+      <dd>Permite expandir elementos de arrays ou objetos. Exemplo: <code>[1, ...[2,3], 4]</code> resulta em <code>[1,2,3,4]</code>.</dd>
+    </div>
+    <div class="card">
+        <span class="level intermediario">Intermediário</span>
+        <dt>Promises</dt>
+        <dd>Objeto que representa a eventual conclusão (ou falha) de uma operação assíncrona.</dd>
+    </div>
+    <div class="card">
+        <span class="level intermediario">Intermediário</span>
+        <dt>async/await</dt>
+        <dd>Sintaxe para lidar com Promises de forma mais legível e estruturada.</dd>
+    </div>
+    <div class="card">
+      <span class="level intermediario">Intermediário</span>
+      <dt>Fetch API</dt>
+      <dd>API moderna para realizar requisições HTTP assíncronas, retornando Promises. Substitui XMLHttpRequest em muitos casos.</dd>
+    </div>
+    <div class="card">
+        <span class="level intermediario">Intermediário</span>
+        <dt>REST</dt>
+        <dd>Estilo de arquitetura para criação de APIs baseado em requisições HTTP.</dd>
+    </div>
+    <div class="card">
+        <span class="level intermediario">Intermediário</span>
+        <dt>Modules</dt>
+        <dd>Arquivos que exportam e importam código entre si, permitindo melhor organização.</dd>
+    </div>
+     <div class="card">
+        <span class="level intermediario">Intermediário</span>
+        <dt>ESM</dt>
+        <dd>Padrão moderno de módulos do JavaScript, usando <code>import</code> e <code>export</code>.</dd>
+    </div>
+     <div class="card">
+        <span class="level intermediario">Intermediário</span>
+        <dt>CommonJS</dt>
+        <dd>Padrão de módulos usado no Node.js, com <code>require</code> e <code>module.exports</code>.</dd>
+    </div>
+    <div class="card">
+        <span class="level intermediario">Intermediário</span>
+        <dt>NPM</dt>
+        <dd>Gerenciador de pacotes padrão do Node.js, usado para instalar dependências.</dd>
+    </div>
+    
+    <div class="card">
+        <span class="level avancado">Avançado</span>
+        <dt>Event Loop</dt>
+        <dd>Mecanismo que gerencia a execução de callbacks, Promises e outras operações assíncronas no JavaScript.</dd>
+    </div>
+    <div class="card">
+      <span class="level avancado">Avançado</span>
+      <dt>Call Stack</dt>
+      <dd>Pilha que controla a execução das funções no JavaScript. Quando uma função é chamada, é adicionada à pilha; ao terminar, é removida.</dd>
+    </div>
+    <div class="card">
+      <span class="level avancado">Avançado</span>
+      <dt>Heap</dt>
+      <dd>Região de memória onde objetos e variáveis dinâmicas são armazenados. O Garbage Collector atua aqui para liberar memória não utilizada.</dd>
+    </div>
+     <div class="card">
+        <span class="level avancado">Avançado</span>
+        <dt>Garbage Collection</dt>
+        <dd>Processo automático do JavaScript que libera memória de objetos que não estão mais em uso.</dd>
+    </div>
+    <div class="card">
+      <span class="level avancado">Avançado</span>
+      <dt>Prototype Chain</dt>
+      <dd>Mecanismo de herança no JavaScript. Objetos podem acessar propriedades/métodos definidos em seus protótipos e na cadeia de protótipos.</dd>
+    </div>
+    <div class="card">
+      <span class="level avancado">Avançado</span>
+      <dt>Pure Function</dt>
+      <dd>Função que não tem efeitos colaterais e sempre retorna o mesmo resultado para os mesmos argumentos, tornando o código mais previsível.</dd>
+    </div>
+    <div class="card">
+      <span class="level avancado">Avançado</span>
+      <dt>Currying</dt>
+      <dd>Técnica de transformar uma função de múltiplos parâmetros em uma sequência de funções que recebem um único parâmetro.</dd>
+    </div>
+    <div class="card">
+      <span class="level avancado">Avançado</span>
+      <dt>IIFE (Immediately Invoked Function Expression)</dt>
+      <dd>Função que é definida e imediatamente executada. Usada para criar escopos isolados.</dd>
+    </div>
+     <div class="card">
+      <span class="level avancado">Avançado</span>
+      <dt>Debounce & Throttle</dt>
+      <dd>Debounce: garante que uma função seja chamada apenas após certo tempo sem novas execuções. Throttle: limita a execução a no máximo uma vez por intervalo.</dd>
+    </div>
+    <div class="card">
+        <span class="level avancado">Avançado</span>
+        <dt>Middleware</dt>
+        <dd>Funções que interceptam requisições/respostas em aplicações, comuns no Express.js.</dd>
+    </div>
+     <div class="card">
+      <span class="level avancado">Avançado</span>
+      <dt>TypeScript</dt>
+      <dd>Superset do JavaScript que adiciona tipagem estática opcional, ajudando a detectar erros em tempo de desenvolvimento.</dd>
+    </div>
+    <div class="card">
+      <span class="level avancado">Avançado</span>
+      <dt>Babel</dt>
+      <dd>Transpilador que converte código moderno de JavaScript em versões compatíveis com navegadores mais antigos.</dd>
+    </div>
+    <div class="card">
+      <span class="level avancado">Avançado</span>
+      <dt>Webpack</dt>
+      <dd>Empacotador de módulos que organiza e otimiza recursos (JS, CSS, imagens) em bundles para aplicações web.</dd>
+    </div>
+     <div class="card">
+      <span class="level avancado">Avançado</span>
+      <dt>Polyfill</dt>
+      <dd>Trecho de código que adiciona suporte a recursos modernos em navegadores antigos que ainda não os implementam nativamente.</dd>
+    </div>
+
+    <div class="card">
+      <span class="level expert">Expert</span>
+      <dt>Microtasks vs Macrotasks</dt>
+      <dd>Microtasks (ex: <code>Promises</code>) têm prioridade e executam antes das Macrotasks (ex: <code>setTimeout</code>) na fila do Event Loop.</dd>
+    </div>
+    <div class="card">
+      <span class="level expert">Expert</span>
+      <dt>WebSockets</dt>
+      <dd>Permitem comunicação em tempo real bidirecional entre cliente e servidor. Muito usados em chats e jogos online.</dd>
+    </div>
+     <div class="card">
+      <span class="level expert">Expert</span>
+      <dt>EventEmitter</dt>
+      <dd>Padrão de eventos no Node.js. Permite emitir e ouvir eventos personalizados, facilitando a comunicação entre partes do código.</dd>
+    </div>
+    <div class="card">
+      <span class="level expert">Expert</span>
+      <dt>Runtime Environment</dt>
+      <dd>Ambiente onde o JS roda. Navegadores fornecem Web APIs; Node.js fornece APIs como <code>fs</code>, <code>http</code>, etc.</dd>
+    </div>
+    <div class="card">
+      <span class="level expert">Expert</span>
+      <dt>Transpilation vs Compilation</dt>
+      <dd>Transpilar significa converter código de uma versão/linguagem para outra semelhante (JS moderno → JS antigo). Compilar envolve traduzir para um formato diferente (TS → JS).</dd>
+    </div>
+
+  </main>
+  
+  <footer>
+    <p>📘 Manual do Dev — Terminologia JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
